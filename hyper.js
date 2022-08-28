@@ -17,7 +17,7 @@ module.exports = {
 	    }
     },
     hyperTransparentVibrancy: {
-	    alpha: 0.5,
+	    alpha: 0.9,
 	    vibrancy: "dark"
     },
     hyperline: {
