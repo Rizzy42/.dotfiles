@@ -1,5 +1,5 @@
 # oh-my-posh
-eval "$(oh-my-posh --init --shell zsh --config $HOME/Dropbox/Dev/shell-config/.shell-theme.omp.json)"
+eval "$(oh-my-posh --init --shell zsh --config $HOME/.dotfiles/shell-theme.omp.json)"
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/opt/anaconda3/bin:$HOME/bin:/usr/local/bin:$PATH
@@ -99,8 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # NVM
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
