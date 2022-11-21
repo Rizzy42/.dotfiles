@@ -132,3 +132,5 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+[ -f "/Users/shaur/.ghcup/env" ] && source "/Users/shaur/.ghcup/env" # ghcup-env
