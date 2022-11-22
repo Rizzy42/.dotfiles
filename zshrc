@@ -75,7 +75,6 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(
 	git
 	zsh-syntax-highlighting
-	zsh-autosuggestions
 )
 
 ZSH_DISABLE_COMPFIX="true"
