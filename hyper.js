@@ -179,7 +179,6 @@ module.exports = {
       'hyper-pane',
       'hyper-quit',
       "hyperterm-gruvbox-dark",
-      "hyper-transparent-vibrancy",
       "hyperpower",
       "hyper-statusline"
     ],
