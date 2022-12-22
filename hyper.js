@@ -178,7 +178,7 @@ module.exports = {
       'hyper-tabs-enhanced',
       'hyper-pane',
       'hyper-quit',
-      "shades-of-purple-hyper",
+      "hyperterm-gruvbox-dark",
       "hyper-transparent-vibrancy",
       "hyperpower",
       "hyper-statusline"

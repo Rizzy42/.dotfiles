@@ -1,3 +1,4 @@
+source ~/zsh-snap/znap.zsh
 # oh-my-posh
 eval "$(oh-my-posh --init --shell zsh --config $HOME/.dotfiles/shell-theme.omp.json)"
 
@@ -75,7 +76,6 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(
 	git
 	zsh-syntax-highlighting
-	zsh-autosuggestions
 )
 
 ZSH_DISABLE_COMPFIX="true"
@@ -133,4 +133,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+znap source marlonrichert/zsh-autocomplete
 [ -f "/Users/shaur/.ghcup/env" ] && source "/Users/shaur/.ghcup/env" # ghcup-env
