@@ -135,3 +135,4 @@ unset __conda_setup
 
 znap source marlonrichert/zsh-autocomplete
 [ -f "/Users/shaur/.ghcup/env" ] && source "/Users/shaur/.ghcup/env" # ghcup-env
+znap source marlonrichert/zsh-autocomplete
