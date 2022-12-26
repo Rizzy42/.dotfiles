@@ -5,7 +5,7 @@
 module.exports = {
   config: {
     hyperTabs: {
-	    trafficButtons: false,
+	    trafficButtons: true,
     },
     hyperBorder: {
 	    borderWidth: '5px',
