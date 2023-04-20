@@ -17,7 +17,7 @@ module.exports = {
 	    }
     },
     hyperTransparentVibrancy: {
-	    alpha: 0.9,
+	    alpha: 0.7,
 	    vibrancy: "dark"
     },
     hyperline: {
@@ -178,8 +178,9 @@ module.exports = {
       'hyper-tabs-enhanced',
       'hyper-pane',
       'hyper-quit',
-      "hyperterm-gruvbox-dark",
+      "hyper-nord",
       "hyperpower",
+      "hyper-transparent-vibrancy",
       "hyper-statusline"
     ],
 

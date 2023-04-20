@@ -1,7 +1,4 @@
 source ~/zsh-snap/znap.zsh
-# oh-my-posh
-eval "$(oh-my-posh --init --shell zsh --config $HOME/.dotfiles/shell-theme.omp.json)"
-
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/opt/anaconda3/bin:$HOME/bin:/usr/local/bin:$PATH
 
@@ -12,6 +9,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="robbyrussell"
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -136,3 +135,4 @@ unset __conda_setup
 znap source marlonrichert/zsh-autocomplete
 [ -f "/Users/shaur/.ghcup/env" ] && source "/Users/shaur/.ghcup/env" # ghcup-env
 znap source marlonrichert/zsh-autocomplete
+export PATH=$PATH:/Users/shaur/.spicetify
