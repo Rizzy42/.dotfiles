@@ -178,7 +178,7 @@ module.exports = {
       'hyper-tabs-enhanced',
       'hyper-pane',
       'hyper-quit',
-      "hyper-nord",
+      "nord-hyper",
       "hyperpower",
       "hyper-transparent-vibrancy",
       "hyper-statusline"
