@@ -3,6 +3,8 @@
         https://github.com/marlonrichert/zsh-snap.git ~/Repos/znap
 source ~/Repos/znap/znap.zsh  # Start Znap
 
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
 # If you come from bash you might have to change your $PATH.
 export PATH=/usr/local/bin:$PATH:$HOME/.local
 
