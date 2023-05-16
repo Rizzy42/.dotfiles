@@ -4,9 +4,6 @@
 
 module.exports = {
   config: {
-    hyperTabs: {
-	    trafficButtons: true,
-    },
     hyperBorder: {
 	    borderWidth: '5px',
 	    borderAngle: '180deg',
@@ -19,13 +16,6 @@ module.exports = {
     hyperTransparentVibrancy: {
 	    alpha: 0.7,
 	    vibrancy: "dark"
-    },
-    hyperline: {
-	    plugins: [
-		    "hostname",
-		    "cpu",
-		    "memory"
-	    ]
     },
     cursorBlink: true,
     // choose either `'stable'` for receiving highly polished,
@@ -171,17 +161,10 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
 	plugins: [
-      'hypercwd',
-      'hyper-alt-click',
-      'hyperterm-safepaste',
-      'hyper-search',
-      'hyper-tabs-enhanced',
       'hyper-pane',
       'hyper-quit',
       "nord-hyper",
-      "hyperpower",
       "hyper-transparent-vibrancy",
-      "hyper-statusline"
     ],
 
 
