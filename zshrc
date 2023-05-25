@@ -1,3 +1,5 @@
+ZSH_DISABLE_COMPFIX=true
+
 # Autocomplete Update
 [[ -r ~/Repos/znap/znap.zsh ]] ||
     git clone --depth 1 -- \
@@ -84,7 +86,6 @@ plugins=(
 	zsh-syntax-highlighting
 )
 
-ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -120,6 +121,7 @@ export NVM_DIR="$HOME/.nvm"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias bup="brew update && brew upgrade && brew autoremove && brew cleanup"
+alias b="brew"
 
 [ -f "/Users/shaur/.ghcup/env" ] && source "/Users/shaur/.ghcup/env" # ghcup-env
 
