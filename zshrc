@@ -1,3 +1,4 @@
+# Autocomplete Update
 [[ -r ~/Repos/znap/znap.zsh ]] ||
     git clone --depth 1 -- \
         https://github.com/marlonrichert/zsh-snap.git ~/Repos/znap
@@ -118,8 +119,19 @@ export NVM_DIR="$HOME/.nvm"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias devd="cd ~/Dropbox/Dev"
+alias bup="brew update && brew upgrade && brew autoremove && brew cleanup"
 
 [ -f "/Users/shaur/.ghcup/env" ] && source "/Users/shaur/.ghcup/env" # ghcup-env
+
+# Znap Plugin Loading
 znap source marlonrichert/zsh-autocomplete
+
+# Spicetify
 export PATH=$PATH:/Users/shaur/.spicetify
+
+# Pyenv 
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+eval "$(pyenv virtualenv-init -)"
