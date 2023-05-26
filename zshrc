@@ -123,6 +123,8 @@ export NVM_DIR="$HOME/.nvm"
 alias bup="brew update && brew upgrade && brew autoremove && brew cleanup"
 alias b="brew"
 
+alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock;"
+
 [ -f "/Users/shaur/.ghcup/env" ] && source "/Users/shaur/.ghcup/env" # ghcup-env
 
 # Znap Plugin Loading
