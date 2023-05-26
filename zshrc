@@ -122,6 +122,7 @@ export NVM_DIR="$HOME/.nvm"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias bup="brew update && brew upgrade && brew autoremove && brew cleanup"
 alias b="brew"
+alias bcleanup="brew autoremove && brew cleanup"
 
 alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock;"
 
