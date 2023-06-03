@@ -14,7 +14,7 @@ module.exports = {
 	    }
     },
     hyperTransparentVibrancy: {
-	    alpha: 0.7,
+	    alpha: 1,
 	    vibrancy: "dark"
     },
     cursorBlink: true,
