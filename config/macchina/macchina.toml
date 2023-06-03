@@ -47,4 +47,4 @@ theme = "sodium"
 #   - GPU
 #   - DiskSpace
 # Example:
-  show = ["OperatingSystem", "Packages", "Terminal", "Uptime", "Processor", "ProcessorLoad", "Memory"]
+  show = ["Host", "Machine", "OperatingSystem", "Packages", "Terminal", "Uptime", "Processor"]
