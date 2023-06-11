@@ -6,7 +6,8 @@ ZSH_DISABLE_COMPFIX=true
         https://github.com/marlonrichert/zsh-snap.git ~/Repos/znap
 source ~/Repos/znap/znap.zsh  # Start Znap
 
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+if [[ $(uname) == "Darwin" ]]; then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
 # If you come from bash you might have to change your $PATH.
 export PATH=/usr/local/bin:$PATH:$HOME/.local
@@ -120,11 +121,12 @@ export NVM_DIR="$HOME/.nvm"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias bup="brew update && brew upgrade && brew autoremove && brew cleanup"
-alias b="brew"
-alias bcleanup="brew autoremove && brew cleanup"
+if [[ $(uname) == "Darwin" ]]; then
+  alias bup="brew update && brew upgrade && brew autoremove && brew cleanup"
+  alias b="brew"
+  alias bcleanup="brew autoremove && brew cleanup"
 
-alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock;"
+  alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock;"
 
 [ -f "/Users/shaur/.ghcup/env" ] && source "/Users/shaur/.ghcup/env" # ghcup-env
 
