@@ -127,7 +127,11 @@ if [[ $(uname) == "Darwin" ]]; then
   alias b="brew"
   alias bcleanup="brew autoremove && brew cleanup"
 
-  alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock;"
+  alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock;";
+elif [[ $(uname) == "Linux" ]]; then
+  alias aup="sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean"
+  alias a="sudo apt"
+  alias acleanup="sudo apt autoremove && sudo apt autoclean"
 fi
 
 [ -f "/Users/shaur/.ghcup/env" ] && source "/Users/shaur/.ghcup/env" # ghcup-env
