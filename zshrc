@@ -8,6 +8,7 @@ source ~/Repos/znap/znap.zsh  # Start Znap
 
 if [[ $(uname) == "Darwin" ]]; then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
 
 # If you come from bash you might have to change your $PATH.
 export PATH=/usr/local/bin:$PATH:$HOME/.local
@@ -127,11 +128,14 @@ if [[ $(uname) == "Darwin" ]]; then
   alias bcleanup="brew autoremove && brew cleanup"
 
   alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock;"
+fi
 
 [ -f "/Users/shaur/.ghcup/env" ] && source "/Users/shaur/.ghcup/env" # ghcup-env
 
 # Znap Plugin Loading
 znap source marlonrichert/zsh-autocomplete
 
-# Spicetify
-export PATH=$PATH:/Users/shaur/.spicetify
+if [[ $(uname) == "Darwin" ]]; then
+  # Spicetify
+  export PATH=$PATH:$HOME/.spicetify
+fi
