@@ -164,7 +164,6 @@ module.exports = {
       'hyper-pane',
       'hyper-quit',
       "nord-hyper",
-      "hyper-transparent-vibrancy",
     ],
 
 
