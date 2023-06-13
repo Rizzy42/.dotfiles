@@ -129,7 +129,7 @@ if [[ $(uname) == "Darwin" ]]; then
 
   alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock;";
 elif [[ $(uname) == "Linux" ]]; then
-  alias aup="sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean"
+  alias aup="sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean"
   alias a="sudo apt"
   alias acleanup="sudo apt autoremove && sudo apt autoclean"
 fi
