@@ -133,3 +133,7 @@ znap source marlonrichert/zsh-autocomplete
 
 # Spicetify
 export PATH=$PATH:/Users/shaur/.spicetify
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
