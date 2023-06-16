@@ -163,7 +163,7 @@ module.exports = {
 	plugins: [
       'hyper-pane',
       'hyper-quit',
-      "nord-hyper",
+      'hyper-aura-theme'
     ],
 
 
