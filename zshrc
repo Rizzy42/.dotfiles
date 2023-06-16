@@ -20,7 +20,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="steeef"
+ZSH_THEME="robbyrussell"
 
 
 # Set list of themes to pick from when loading at random
@@ -142,4 +142,9 @@ znap source marlonrichert/zsh-autocomplete
 if [[ $(uname) == "Darwin" ]]; then
   # Spicetify
   export PATH=$PATH:$HOME/.spicetify
+
+  # Pyenv
+  export PYENV_ROOT="$HOME/.pyenv"
+  command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
 fi
