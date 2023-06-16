@@ -6,7 +6,9 @@ ZSH_DISABLE_COMPFIX=true
         https://github.com/marlonrichert/zsh-snap.git ~/Repos/znap
 source ~/Repos/znap/znap.zsh  # Start Znap
 
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+if [[ $(uname) == "Darwin" ]]; then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
 
 # If you come from bash you might have to change your $PATH.
 export PATH=/usr/local/bin:$PATH:$HOME/.local
@@ -120,20 +122,24 @@ export NVM_DIR="$HOME/.nvm"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias bup="brew update && brew upgrade && brew autoremove && brew cleanup"
-alias b="brew"
-alias bcleanup="brew autoremove && brew cleanup"
+if [[ $(uname) == "Darwin" ]]; then
+  alias bup="brew update && brew upgrade && brew autoremove && brew cleanup"
+  alias b="brew"
+  alias bcleanup="brew autoremove && brew cleanup"
 
-alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock;"
+  alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock;";
+elif [[ $(uname) == "Linux" ]]; then
+  alias aup="sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean"
+  alias a="sudo apt"
+  alias acleanup="sudo apt autoremove && sudo apt autoclean"
+fi
 
 [ -f "/Users/shaur/.ghcup/env" ] && source "/Users/shaur/.ghcup/env" # ghcup-env
 
 # Znap Plugin Loading
 znap source marlonrichert/zsh-autocomplete
 
-# Spicetify
-export PATH=$PATH:/Users/shaur/.spicetify
-
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+if [[ $(uname) == "Darwin" ]]; then
+  # Spicetify
+  export PATH=$PATH:$HOME/.spicetify
+fi
