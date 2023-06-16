@@ -13,6 +13,7 @@ module.exports = {
 	    	duration: 20000
 	    }
     },
+    catppuccinTheme: "Mocha",
     hyperTransparentVibrancy: {
 	    alpha: 1,
 	    vibrancy: "dark"
@@ -163,7 +164,7 @@ module.exports = {
 	plugins: [
       'hyper-pane',
       'hyper-quit',
-      'hyper-aura-theme'
+      'hypurr'
     ],
 
 
