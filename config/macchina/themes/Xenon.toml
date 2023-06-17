@@ -11,7 +11,7 @@ visible         = true
 
 [palette]
 glyph           = "○  "
-visible         = false
+visible         = true
 
 [bar]
 glyph           = "○"
