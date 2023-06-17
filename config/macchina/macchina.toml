@@ -47,4 +47,4 @@ theme = "xenon"
 #   - GPU
 #   - DiskSpace
 # Example:
-  show = ["Host", "OperatingSystem", "Packages", "Uptime", "Processor", "Memory"]
+  show = ["Host", "OperatingSystem", "Packages", "Uptime", "Processor"]
