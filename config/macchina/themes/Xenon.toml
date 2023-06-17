@@ -1,0 +1,30 @@
+# Beryllium
+
+spacing         = 2
+hide_ascii      = true
+key_color       = "#89b4fa"
+separator       = ""
+
+[box]
+border          = "thick"
+visible         = true
+
+[palette]
+glyph           = "○  "
+visible         = false
+
+[bar]
+glyph           = "○"
+hide_delimiters = true
+visible         = true
+
+[box.inner_margin]
+x               = 2
+y               = 1
+
+[custom_ascii]
+color           = "#FF7001"
+
+[keys]
+
+cpu             = "Processor"
