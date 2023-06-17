@@ -22,7 +22,7 @@ physical_cores = false
 #  if theme path is /home/foo/.config/macchina/themes/Sodium.toml
 #  theme should be uncommented and set to "Sodium"
 #
-theme = "sodium"
+theme = "xenon"
 
 # Displays only the specified readouts.
 # Accepted values (case-sensitive):
@@ -47,4 +47,4 @@ theme = "sodium"
 #   - GPU
 #   - DiskSpace
 # Example:
-  show = ["Host", "Machine", "OperatingSystem", "Packages", "Terminal", "Uptime", "Processor"]
+  show = ["Host", "OperatingSystem", "Packages", "Uptime", "Processor", "Memory"]
