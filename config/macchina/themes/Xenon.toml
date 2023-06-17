@@ -6,7 +6,7 @@ key_color       = "#89b4fa"
 separator       = ""
 
 [box]
-border          = "thick"
+border          = "rounded"
 visible         = true
 
 [palette]
