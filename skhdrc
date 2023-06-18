@@ -37,4 +37,5 @@ alt - t         : yabai -m window --toggle float;\
 alt - b         : open -a "Brave Browser"
 alt - o         : open -a "Obsidian"
 alt - m         : open -a "Mail"
+alt - s         : open -a "Spotify"
 alt - return    : open -a "Hyper"
