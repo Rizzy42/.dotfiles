@@ -28,4 +28,4 @@ shift + cmd - d : yabai -m window --resize right:-20:0
 
 # float / unfloat window and center on screen
 alt - t          : yabai -m window --toggle float;\
-                   yabai -m window --grid 4:4:1:1:2:2
+                   yabai -m window --grid 8:8:1:1:6:6
