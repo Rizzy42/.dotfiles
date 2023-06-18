@@ -6,11 +6,11 @@ key_color       = "#89b4fa"
 separator       = ""
 
 [box]
-border          = "rounded"
+border          = "plain"
 visible         = true
 
 [palette]
-glyph           = "○  "
+glyph           = "●  "
 visible         = true
 
 [bar]
