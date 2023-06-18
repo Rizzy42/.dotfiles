@@ -1,6 +1,5 @@
 # Global Settings
-yabai -m config mouse_follows_focus off
-yabai -m config focus_follows_mouse off
+yabai -m config focus_follows_mouse autofocus
 
 yabai -m config window_border                on 
 yabai -m config active_window_border_color   0xff89b4fa
@@ -19,3 +18,12 @@ yabai -m config window_gap                   10
 # App Rules
 
 yabai -m rule --add                          app="Stats" sticky=on layer=above manage=off
+
+# Mouse settings
+yabai -m config mouse_modifier alt
+
+# set modifier + left-click drag to move window (default: move)
+yabai -m config mouse_action1 move
+
+# set modifier + right-click drag to resize window (default: resize)
+yabai -m config mouse_action2 resize
