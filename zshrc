@@ -130,6 +130,8 @@ if [[ $(uname) == "Darwin" ]]; then
   alias ryabai="yabai --stop-service && yabai --start-service"
   alias rskhd="skhd --stop-service && skhd --start-service"
 
+  alias o="open -a"
+
   alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock;";
 elif [[ $(uname) == "Linux" ]]; then
   alias aup="sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean"
