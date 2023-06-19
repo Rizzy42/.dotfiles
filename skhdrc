@@ -12,6 +12,12 @@ ctrl + alt - down  : yabai -m window --swap south
 ctrl + alt - right : yabai -m window --swap east
 ctrl + alt - left  : yabai -m window --swap west
 
+# Warp Windows
+cmd + alt - up    : yabai -m window --warp north
+cmd + alt - down  : yabai -m window --warp south
+cmd + alt - right : yabai -m window --warp east
+cmd + alt - left  : yabai -m window --warp west
+
 # Window Size
 
 shift + ctrl + alt - up : yabai -m window --resize top:0:-20
@@ -32,6 +38,11 @@ alt - t                    : yabai -m window --toggle float;\
 
 shift + alt - t            : yabai -m window --toggle float
 
+# Zoom and Fullscreen
+
+alt - p                    : yabai -m window --toggle zoom-parent
+alt - f                    : yabai -m window --toggle zoom-fullscreen
+
 # Applications
 
 alt - b                    : open -a "Brave Browser"
@@ -44,3 +55,5 @@ alt - n                    : open -a "Numi"
 
 alt - e                    : open -a "Visual Studio Code"
 alt - return               : open -a "Hyper"
+
+alt - m                    : open -a "Mail"
