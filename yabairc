@@ -6,7 +6,8 @@ yabai -m config window_border                on
 yabai -m config active_window_border_color   0xff89b4fa
 
 yabai -m config window_border_width          5
-yabai -m config window_border_radius         1
+yabai -m config window_border_radius         15
+
 
 # Window Settings
 yabai -m config layout                       bsp
