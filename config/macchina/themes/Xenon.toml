@@ -7,7 +7,7 @@ separator       = ""
 
 [box]
 border          = "plain"
-visible         = true
+visible         = false
 
 [palette]
 glyph           = "●  "
