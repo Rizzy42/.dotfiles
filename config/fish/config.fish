@@ -1,6 +1,5 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-
     switch (uname)
         case Darwin
             alias bup="brew update && brew upgrade && brew autoremove && brew cleanup"
