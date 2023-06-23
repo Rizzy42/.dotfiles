@@ -54,6 +54,6 @@ alt - m                    : open -a "Mail"
 alt - n                    : open -a "Numi"
 
 alt - e                    : open -a "Visual Studio Code"
-alt - return               : open -a "Hyper"
+alt - return               : open -a "iTerm"
 
 alt - m                    : open -a "Mail"
