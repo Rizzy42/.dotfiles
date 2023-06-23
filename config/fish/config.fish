@@ -19,7 +19,10 @@ if status is-interactive
             alias a="sudo apt"
             alias acleanup="sudo apt autoremove && sudo apt autoclean"
     end
+    # Locale
+    export LANG="en_UK.UTF-8"
+    export LC_ALL="en_UK.UTF-8"
+    
     macchina
 end
-
 set fish_greeting ""
