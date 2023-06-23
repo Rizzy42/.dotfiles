@@ -20,8 +20,8 @@ if status is-interactive
             alias acleanup="sudo apt autoremove && sudo apt autoclean"
     end
     # Locale
-    export LANG="en_UK.UTF-8"
-    export LC_ALL="en_UK.UTF-8"
+    export LANG="en_US.UTF-8"
+    export LC_ALL="en_US.UTF-8"
     
     macchina
 end
