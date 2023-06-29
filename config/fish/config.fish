@@ -21,8 +21,8 @@ if status is-interactive
     end
     
     # Locale
-    export LANG="en_US.UTF-8"
-    export LC_ALL="en_US.UTF-8"
+    export LANG="en_GB.UTF-8"
+    export LC_ALL="en_GB.UTF-8"
 
     # Starship Prompt
     starship init fish | source
