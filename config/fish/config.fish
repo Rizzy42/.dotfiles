@@ -13,7 +13,7 @@ if status is-interactive
 
             alias matr="cmatrix -C blue"
 
-            alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock;";
+            alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock";
         case Linux
             alias aup="sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean"
             alias a="sudo apt"
