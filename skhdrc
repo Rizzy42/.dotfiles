@@ -53,6 +53,7 @@ alt - z                    : open -a "Microsoft Teams"
 # Utilities
 alt - m                    : open -a "Mail"
 alt - c                    : open -a "Calendar"
+alt - r                    : open -a "Reminders"
 alt - n                    : open -a "Numi"
 
 alt - e                    : open -a "Visual Studio Code"
