@@ -1,9 +1,9 @@
 # Global Settings
 yabai -m config focus_follows_mouse autoraise
 
-yabai -m config window_border                off
+yabai -m config window_border                on
 
-yabai -m config active_window_border_color   0xff89b4fa
+yabai -m config active_window_border_color   0xffcff5ff
 
 yabai -m config window_border_width          5
 yabai -m config window_border_radius         15
@@ -12,11 +12,11 @@ yabai -m config window_border_radius         15
 # Window Settings
 yabai -m config layout                       bsp
 
-yabai -m config top_padding                  7
-yabai -m config bottom_padding               7
-yabai -m config left_padding                 7
-yabai -m config right_padding                7
-yabai -m config window_gap                   7
+yabai -m config top_padding                  3
+yabai -m config bottom_padding               3
+yabai -m config left_padding                 3
+yabai -m config right_padding                3
+yabai -m config window_gap                   3
 
 # Mouse settings
 yabai -m config mouse_modifier alt
