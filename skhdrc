@@ -45,7 +45,7 @@ alt + shift - down         : yabai -m window --toggle zoom-fullscreen
 
 # Applications
 
-alt - b                    : open -a "Safari"
+alt - b                    : open -a "Brave Browser"
 alt - o                    : open -a "Obsidian"
 alt - s                    : open -a "Spotify"
 alt - z                    : open -a "Microsoft Teams"
