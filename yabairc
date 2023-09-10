@@ -7,12 +7,9 @@ sudo yabai --load-sa
 yabai -m config focus_follows_mouse autoraise
 
 yabai -m config window_border                on
-yabai -m conf
-
 yabai -m config active_window_border_color   0xfff38ba8
-
 yabai -m config window_border_width          4
-
+yabai -m window_border_hidpi                 true
 
 
 # Window Settings
@@ -39,10 +36,10 @@ yabai -m config status_bar                   off
 yabai -m config window_opacity on
 yabai -m config window_opacity_duration      0.0
 yabai -m config active_window_opacity        1.0
-yabai -m config normal_window_opacity        0.9
+yabai -m config normal_window_opacity        0.8
 
 # Animation
 
-yabai -m config window_animation_duration    0.2
+yabai -m config window_animation_duration    0.05
 yabai -m config window_animation_frame_rate  120
-yabai -m config window_opacity_duration      0.2
+yabai -m config window_opacity_duration      0.05
