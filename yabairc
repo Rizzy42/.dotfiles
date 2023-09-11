@@ -6,9 +6,9 @@ sudo yabai --load-sa
 # Global Settings
 yabai -m config focus_follows_mouse autoraise
 
-yabai -m config window_border                off
-yabai -m config active_window_border_color   0xfff38ba8
-yabai -m config window_border_width          4
+yabai -m config window_border                on
+yabai -m config active_window_border_color   0xff89b4fa
+yabai -m config window_border_width          2
 yabai -m window_border_hidpi                 true
 
 
