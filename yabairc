@@ -27,37 +27,6 @@ yabai -m config mouse_modifier alt
 yabai -m config mouse_action1 move
 yabai -m config mouse_action2 resize
 
-# Desktops
-
-function setup_space {
-  local idx="$1"
-  local name="$2"
-  local space=
-  echo "setup space $idx : $name"
-
-  space=$(yabai -m query --spaces --space "$idx")
-  if [ -z "$space" ]; then
-    yabai -m space --create
-  fi
-
-  yabai -m space "$idx" --label "$name"
-}
-
-setup_space other
-setup_space media
-setup_space scratchpad
-
-for idx in $(yabai -m query --spaces | jq '.[].index | select(. > 4)' | sort -nr); do
-  yabai -m space --destroy "$idx"
-done
-
-yabai -m config --space 4 layout float
-
-
-
-# Desktop Rules
-yabai -m rule --add app=Spotify space=3
-
 # Appearance
 
 yabai -m config window_shadow off
