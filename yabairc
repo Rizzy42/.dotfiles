@@ -6,7 +6,7 @@ sudo yabai --load-sa
 # Global Settings
 yabai -m config focus_follows_mouse autoraise
 
-yabai -m config window_border                on
+yabai -m config window_border                off
 yabai -m config active_window_border_color   0xfff38ba8
 yabai -m config window_border_width          4
 yabai -m window_border_hidpi                 true
@@ -15,11 +15,11 @@ yabai -m window_border_hidpi                 true
 # Window Settings
 yabai -m config layout                       bsp
 
-yabai -m config top_padding                  7
-yabai -m config bottom_padding               7
-yabai -m config left_padding                 7
-yabai -m config right_padding                7
-yabai -m config window_gap                   7
+yabai -m config top_padding                  10
+yabai -m config bottom_padding               10
+yabai -m config left_padding                 10
+yabai -m config right_padding                10
+yabai -m config window_gap                   10
 
 # Mouse settings
 yabai -m config mouse_modifier alt
@@ -40,6 +40,6 @@ yabai -m config normal_window_opacity        0.8
 
 # Animation
 
-yabai -m config window_animation_duration    0.05
+yabai -m config window_animation_duration    0
 yabai -m config window_animation_frame_rate  120
-yabai -m config window_opacity_duration      0.05
+yabai -m config window_opacity_duration      0.2
