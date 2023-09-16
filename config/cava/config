@@ -42,7 +42,7 @@ sleep_timer = 0
 [input]
 
 method = portaudio
-source = "BoomAudio"
+source = BoomAudio
 
 
 [output]
