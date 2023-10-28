@@ -33,7 +33,7 @@ yabai -m config window_shadow off
 yabai -m config status_bar                   off
 
 # Opacity
-yabai -m config window_opacity 				 off
+yabai -m config window_opacity 				 on
 yabai -m config window_opacity_duration      0.0
 yabai -m config active_window_opacity        1
 yabai -m config normal_window_opacity        0.8
