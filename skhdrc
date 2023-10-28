@@ -52,7 +52,7 @@ alt + shift - r            : yabai -m space --focus recent
 
 alt - b                    : open -a "Opera"
 alt - o                    : open -a "Obsidian"
-alt - s                    : open -a "Spotify"
+alt - s                    : open -a "Apple Music"
 alt - z                    : open -a "Microsoft Teams"
 
 # Utilities
