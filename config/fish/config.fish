@@ -20,14 +20,7 @@ if status is-interactive
             alias acleanup="sudo apt autoremove && sudo apt autoclean"
     end
     
-    # Locale
-    export LANG="en_GB.UTF-8"
-    export LC_ALL="en_GB.UTF-8"
-
     # Starship Prompt
     starship init fish | source
-
-    # Macchina information
-    macchina
 end
 set fish_greeting ""
