@@ -31,5 +31,3 @@ if status is-interactive
     macchina
 end
 set fish_greeting ""
-starship init fish | source
-fish_add_path /Users/shaur/.spicetify
