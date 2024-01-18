@@ -22,5 +22,9 @@ if status is-interactive
     
     # Starship Prompt
     starship init fish | source
+
+    # pfetch config
+    echo \n
+    pfetch
 end
 set fish_greeting ""
