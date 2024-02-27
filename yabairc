@@ -39,4 +39,4 @@ yabai -m config window_animation_duration    0.15
 yabai -m config window_animation_frame_rate  120
 
 # JankyBorder
-borders active_color=0xFFEA856F inactive_color=0xFFE1E3E4 width=7
+borders active_color=0xFF89B4FA inactive_color=0xFFE1E3E4 width=7
