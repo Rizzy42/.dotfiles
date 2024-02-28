@@ -41,10 +41,8 @@ yabai -m config window_animation_frame_rate  120
 # App Rules
 yabai -m rule --add app="^System Settings$" manage=off
 
-# For SketchyBar
-# if [[ $(uname -m) = "x86_64" ]]; then:
-	yabai -m config external_bar main:30:0
-# fi
+# For SketchyBar on iMac
+yabai -m config external_bar main:30:0
 
 # JankyBorder
 borders active_color=0xFFB8BFED inactive_color=0xFFE1E3E4 width=7
