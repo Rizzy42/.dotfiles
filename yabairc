@@ -42,4 +42,4 @@ yabai -m config window_animation_frame_rate  120
 yabai -m rule --add app="^System Settings$" manage=off
 
 # JankyBorder
-borders active_color=0xFF89B4FA inactive_color=0xFFE1E3E4 width=7
+borders active_color=0xFFB8BFED inactive_color=0xFFE1E3E4 width=7
