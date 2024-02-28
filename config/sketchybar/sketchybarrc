@@ -1,66 +1,78 @@
-BG=0x651e1e2e
+#!/bin/bash
 
-FONT="FiraCode Nerd Font"
-FONT_SIZE=14
-FONT_COLOR=0xffcdd6f4
-ICON_FONT_SIZE=16
+source "$CONFIG_DIR/colors.sh" # Loads all defined colors
+source "$CONFIG_DIR/icons.sh" # Loads all defined icons
 
-ITEM_PADDING=6
-ITEM_COLOR=0x503d3c53
-GAP=6
+ITEM_DIR="$CONFIG_DIR/items" # Directory where the items are configured
+PLUGIN_DIR="$CONFIG_DIR/plugins" # Directory where all the plugin scripts are stored
 
-PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
+FONT="FiraCode Nerd Font" # Needs to have Regular, Bold, Semibold, Heavy and Black variants
+PADDINGS=3 # All paddings use this value (icon, label, background)
 
-sketchybar --bar \
-  margin=17 y_offset=3 height=34 \
-  corner_radius=6 blur_radius=5 \
-  border_width=1 border_color=0x28222222 \
-  padding_left=17 padding_right=20 \
-  sticky = on
-  
-sketchybar --default \
-  label.font="$FONT:Regular:$FONT_SIZE" label.color=$FONT_COLOR \
-  label.padding_left=$ITEM_PADDING label.padding_right=$ITEM_PADDING \
-  icon.font="$FONT:Regular:$ICON_FONT_SIZE"\
-  icon.padding_left=$ITEM_PADDING \
-  background.color=$ITEM_COLOR \
-  background.padding_right=$GAP background.height=25 \
-  background.corner_radius=6
-  
-sketchybar --add item os left \
-  --set os \
-  icon= icon.color=0xfff5c2e7 \
-  icon.font.size=21 icon.y_offset=2 \
-  icon.padding_left=0 icon.padding_right=0 \
-  label.padding_left=0 label.padding_right=6 \
-  background.drawing=off
+# Setting up and starting the helper process
+HELPER=git.felix.helper
+killall helper
+(cd $CONFIG_DIR/helper && make)
+$CONFIG_DIR/helper/helper $HELPER > /dev/null 2>&1 &
 
-sketchybar --add item user left \
-  --set user \
-  label="$(whoami)" label.font.style="Bold" \
-  icon=󰀄 icon.color=0xffc7ea46
+# Unload the macOS on screen indicator overlay for volume change
+launchctl unload -F /System/Library/LaunchAgents/com.apple.OSDUIHelper.plist > /dev/null 2>&1 &
 
-sketchybar --add item weather left \
-  --set weather \
-  icon=󰖐 \
-  script="$PLUGIN_DIR/weather.sh" \
-  update_freq=1500 \
-  --subscribe weather mouse.clicked
+# Setting up the general bar appearance of the bar
+bar=(
+  height=45
+  color=0x00000000
+  position=top
+  sticky=on
+  padding_right=10
+  padding_left=10
+  y_offset=-5
+  topmost=window
+)
 
-sketchybar --add item clock right \
-  --set clock \
-  script="$PLUGIN_DIR/clock.sh" \
-  background.padding_right=0 \
-  update_freq=10
+sketchybar --bar "${bar[@]}"
 
-sketchybar --add item battery right \
-  --set battery \
-  script="$PLUGIN_DIR/battery.sh" \
-  update_freq=60
+# Setting up default values
+defaults=(
+  updates=when_shown
+  icon.font="$FONT:14.0"
+  icon.color=$ICON_COLOR
+  icon.padding_left=$PADDINGS
+  icon.padding_right=$PADDINGS
+  label.font="$FONT:13.0"
+  label.color=$LABEL_COLOR
+  label.padding_left=2
+  label.padding_right=2
+  padding_right=$PADDINGS
+  padding_left=$PADDINGS
+  background.height=26
+  background.corner_radius=9
+  background.border_width=2
+  popup.background.border_width=2
+  popup.background.corner_radius=9
+  popup.background.border_color=$POPUP_BORDER_COLOR
+  popup.background.color=$POPUP_BACKGROUND_COLOR
+  popup.blur_radius=20
+  popup.background.shadow.drawing=on
+  scroll_texts=on
+)
 
-sketchybar --add item wifi left \
-   --set wifi \
-   script="$PLUGIN_DIR/wifi.sh" \
-   --subscribe wifi wifi_change
+sketchybar --default "${defaults[@]}"
 
+# Left
+source "$ITEM_DIR/spaces.sh"
+source "$ITEM_DIR/yabai.sh"
+
+# Right
+# source "$ITEM_DIR/calendar.sh"
+# source "$ITEM_DIR/wifi.sh"
+# source "$ITEM_DIR/battery.sh"
+# source "$ITEM_DIR/volume.sh"
+source "$ITEM_DIR/svim.sh"
+
+sketchybar --hotload on
+
+# Forcing all item scripts to run (never do this outside of sketchybarrc)
 sketchybar --update
+
+echo "sketchybar configuation loaded.."
