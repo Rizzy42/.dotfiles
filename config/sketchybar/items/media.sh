@@ -1,5 +1,5 @@
 media=(
-  icon.background.drawing=on
+  icon.background.drawing=off
   icon.background.image=media.artwork
   icon.background.image.corner_radius=9
   script="$PLUGIN_DIR/media.sh"
@@ -8,6 +8,6 @@ media=(
   updates=on
 )
 
-sketchybar --add item media center \
+sketchybar --add item media left \
            --set media "${media[@]}" \
            --subscribe media media_change
