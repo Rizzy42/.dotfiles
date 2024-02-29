@@ -1,34 +1,34 @@
 # Yabai
 
 # Focus Windows
-alt - up                   : yabai -m window --focus north
-alt - down                 : yabai -m window --focus south
-alt - right                : yabai -m window --focus east
-alt - left                 : yabai -m window --focus west
+alt - k                    : yabai -m window --focus north
+alt - j                    : yabai -m window --focus south
+alt - l                    : yabai -m window --focus east
+alt - h                    : yabai -m window --focus west
 
 # Swap Windows
-ctrl + alt - up            : yabai -m window --swap north
-ctrl + alt - down          : yabai -m window --swap south
-ctrl + alt - right         : yabai -m window --swap east
-ctrl + alt - left          : yabai -m window --swap west
+ctrl + alt - k             : yabai -m window --swap north
+ctrl + alt - j             : yabai -m window --swap south
+ctrl + alt - l             : yabai -m window --swap east
+ctrl + alt - h             : yabai -m window --swap west
 
 # Warp Windows
-cmd + alt - up             : yabai -m window --warp north
-cmd + alt - down           : yabai -m window --warp south
-cmd + alt - right          : yabai -m window --warp east
-cmd + alt - left           : yabai -m window --warp west
+cmd + alt - k              : yabai -m window --warp north
+cmd + alt - j              : yabai -m window --warp south
+cmd + alt - l              : yabai -m window --warp east
+cmd + alt - h              : yabai -m window --warp west
 
 # Window Size
 
-shift + ctrl + alt - up    : yabai -m window --resize top:0:-20
-shift + ctrl + alt - down  : yabai -m window --resize bottom:0:20
-shift + ctrl + alt - right : yabai -m window --resize right:20:0
-shift + ctrl + alt - left  : yabai -m window --resize left:-20:0
+shift + ctrl + alt - k     : yabai -m window --resize top:0:-20
+shift + ctrl + alt - j     : yabai -m window --resize bottom:0:20
+shift + ctrl + alt - l     : yabai -m window --resize right:20:0
+shift + ctrl + alt - h     : yabai -m window --resize left:-20:0
 
-hyper - up                 : yabai -m window --resize top:0:20
-hyper - down               : yabai -m window --resize bottom:0:-20
-hyper - right              : yabai -m window --resize right:-20:0
-hyper - left               : yabai -m window --resize left:20:0
+hyper - k                  : yabai -m window --resize top:0:20
+hyper - j                  : yabai -m window --resize bottom:0:-20
+hyper - l                  : yabai -m window --resize right:-20:0
+hyper - h                  : yabai -m window --resize left:20:0
 
 # Float
 
@@ -40,19 +40,19 @@ shift + alt - f                    : yabai -m window --toggle float;\
 
 # Zoom and Fullscreen
 
-alt + shift - up           : yabai -m window --toggle zoom-parent
-alt + shift - down         : yabai -m window --toggle zoom-fullscreen
+alt + shift - k            : yabai -m window --toggle zoom-parent
+alt + shift - j            : yabai -m window --toggle zoom-fullscreen
 
 # Desktops and windows
-alt + shift - right        : yabai -m space --focus next
-alt + shift - left         : yabai -m space --focus prev
+alt + shift - l            : yabai -m space --focus next
+alt + shift - h            : yabai -m space --focus prev
 alt + shift - r            : yabai -m space --focus recent
 
-ctrl + shift - up          : yabai -m space --create
-ctrl + shift - down        : yabai -m space --destroy
+ctrl + shift - k           : yabai -m space --create
+ctrl + shift - j           : yabai -m space --destroy
 
-ctrl + shift - right       : yabai -m window --space next && yabai -m window --focus recent
-ctrl + shift - left        : yabai -m window --space prev && yabai -m window --focus recent
+ctrl + shift - l           : yabai -m window --space next && yabai -m window --focus recent
+ctrl + shift - h           : yabai -m window --space prev && yabai -m window --focus recent
 
 
 # Applications
