@@ -38,6 +38,8 @@ alt - f                    : yabai -m window --toggle float
 shift + alt - f                    : yabai -m window --toggle float;\
                              yabai -m window --grid 8:8:1:1:6:6
 
+ctrl + alt - f            : yabai -m window --toggle sticky
+
 # Zoom and Fullscreen
 
 alt + shift - k            : yabai -m window --toggle zoom-parent
