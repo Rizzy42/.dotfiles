@@ -50,11 +50,11 @@ alt + shift - l            : yabai -m space --focus next
 alt + shift - h            : yabai -m space --focus prev
 alt + shift - r            : yabai -m space --focus recent
 
-ctrl + shift - k           : yabai -m space --create
-ctrl + shift - j           : yabai -m space --destroy
+cmd + shift - k            : yabai -m space --create
+cmd + shift - j            : yabai -m space --destroy
 
-ctrl + shift - l           : yabai -m window --space next && yabai -m window --focus recent
-ctrl + shift - h           : yabai -m window --space prev && yabai -m window --focus recent
+cmd + shift - l            : yabai -m window --space next && yabai -m window --focus recent
+cmd + shift - h            : yabai -m window --space prev && yabai -m window --focus recent
 
 
 # Applications
