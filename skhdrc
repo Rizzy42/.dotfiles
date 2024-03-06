@@ -59,16 +59,16 @@ cmd + shift - h            : yabai -m window --space prev && yabai -m window --f
 
 # Applications
 
-alt - b                    : open -a "Brave Browser"
-alt - o                    : open -a "Obsidian"
-alt - s                    : open -a "Apple Music"
-alt - z                    : open -a "Microsoft Teams"
+ralt - b                   : open -a "Brave Browser"
+ralt - o                   : open -a "Obsidian"
+ralt - s                   : open -a "Apple Music"
+ralt - z                   : open -a "Microsoft Teams"
 
 # Utilities
-alt - m                    : open -a "Spark Desktop"
-alt - a                    : open -a "Calendar"
-alt - d                    : open -a "Todoist"
-alt - n                    : open -a "Numi"
+ralt - m                   : open -a "Spark Desktop"
+ralt - a                   : open -a "Calendar"
+ralt - d                   : open -a "Todoist"
+ralt - n                   : open -a "Numi"
 
-alt - e                    : open -a "Visual Studio Code"
-alt - return               : open -a "iTerm"
+ralt - e                   : open -a "Visual Studio Code"
+ralt - return              : open -a "iTerm"
