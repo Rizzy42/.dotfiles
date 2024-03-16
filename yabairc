@@ -27,7 +27,7 @@ yabai -m config mouse_action2 resize
 
 # Appearance
 
-yabai -m config window_shadow off
+yabai -m config window_shadow on
 yabai -m config status_bar                   off
 yabai -m config insert_feedback_color        0xFFB8BFED
 
@@ -49,8 +49,5 @@ yabai -m config menubar_opacity               0.0
 
 # For SketchyBar on iMac
 yabai -m config external_bar main:30:0
-
-# JankyBorder
-borders active_color=0xFFB8BFED inactive_color=0xFFE1E3E4 width=7
 
 echo "Yabai is locked and loaded"
