@@ -17,7 +17,7 @@ yabai -m config right_padding                10
 yabai -m config window_gap                   10
 
 # Easing
-yabai -m config window_animation_easing      ease_in_sine
+yabai -m config window_animation_easing      ease_in_out_quart
 
 # Mouse settings
 yabai -m config mouse_modifier alt
@@ -45,7 +45,7 @@ yabai -m config window_animation_duration    0.15
 yabai -m rule --add app="^System Settings$" manage=off
 
 # Menubar
-yabai -m config menubar_opacity               0.6
+yabai -m config menubar_opacity               0.0
 
 # For SketchyBar on iMac
 yabai -m config external_bar main:40:0
