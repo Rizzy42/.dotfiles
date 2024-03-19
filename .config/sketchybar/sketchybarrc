@@ -15,9 +15,6 @@ killall helper
 (cd $CONFIG_DIR/helper && make)
 $CONFIG_DIR/helper/helper $HELPER > /dev/null 2>&1 &
 
-# Unload the macOS on screen indicator overlay for volume change
-launchctl unload -F /System/Library/LaunchAgents/com.apple.OSDUIHelper.plist > /dev/null 2>&1 &
-
 # Setting up the general bar appearance of the bar
 bar=(
   height=45
@@ -75,7 +72,7 @@ source "$ITEM_DIR/svim.sh"
 # source "$ITEM_DIR/wifi.sh"
 source "$ITEM_DIR/front_app.sh"
 source "$ITEM_DIR/battery.sh"
-source "$ITEM_DIR/volume.sh"
+# source "$ITEM_DIR/volume.sh"
 source "$ITEM_DIR/media.sh"
 
 sketchybar --hotload on
