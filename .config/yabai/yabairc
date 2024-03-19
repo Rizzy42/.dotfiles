@@ -39,7 +39,7 @@ yabai -m config normal_window_opacity        0.6
 
 # Animation
 
-yabai -m config window_animation_duration    0.15
+yabai -m config window_animation_duration    0.3
 
 # App Rules
 yabai -m rule --add app="^System Settings$" manage=off
