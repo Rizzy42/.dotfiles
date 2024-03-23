@@ -1,5 +1,5 @@
 # Packages
-echo "Installing formulae..."
+echo "\nInstalling formulae..."
 brew install stow \
              fish \
              starship \
@@ -18,14 +18,14 @@ brew install yabai \
              skhd
 
 # Casks
-echo "Installing casks..."
+echo "\nInstalling casks..."
 brew install --cask karabiner-elements \
                     shortcat
 
 # Fonts
-echo "Installing fonts..."
+echo "\nInstalling fonts..."
 brew tap homebrew/cask-fonts
 brew install --cask sf-symbols \
                     font-sf-mono \
                     font-sf-pro \
-                    font-ia-writer-quattro
+					font-ia-writer-quattro
