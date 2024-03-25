@@ -56,6 +56,7 @@ local function update_menus(env)
   end)
 end
 
+
 menu_watcher:subscribe("front_app_switched", update_menus)
 
 space_menu_swap:subscribe("swap_menus_and_spaces", function(env)
