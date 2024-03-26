@@ -19,11 +19,17 @@ if status is-interactive
             alias a="sudo apt"
             alias acleanup="sudo apt autoremove && sudo apt autoclean"
     end
+
+    alias g="git"
     
     # Starship Prompt
     starship init fish | source
 
     # pfetch config
+
+    set -gx PF_INFO "ascii title os de shell pkgs uptime memory"
+    set -gx HOSTNAME "catppuccin"
+
     echo \n
     pfetch
 
