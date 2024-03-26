@@ -2,12 +2,11 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     switch (uname)
         case Darwin
+            set -gx HOSTNAME "macppuccin"
+
             alias bup="brew update && brew upgrade && brew autoremove && brew cleanup"
             alias b="brew"
             alias bcleanup="brew autoremove && brew cleanup"
-
-            alias ryabai="yabai --stop-service && yabai --start-service"
-            alias rskhd="skhd --stop-service && skhd --start-service"
 
             alias o="open -a"
 
@@ -15,6 +14,8 @@ if status is-interactive
 
             alias sortlaunchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock";
         case Linux
+            set -gx HOSTNAME "pippuccin"
+
             alias aup="sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean"
             alias a="sudo apt"
             alias acleanup="sudo apt autoremove && sudo apt autoclean"
@@ -28,7 +29,6 @@ if status is-interactive
     # pfetch config
 
     set -gx PF_INFO "ascii title os de shell pkgs uptime memory"
-    set -gx HOSTNAME "catppuccin"
 
     echo \n
     pfetch
