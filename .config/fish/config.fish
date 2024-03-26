@@ -4,6 +4,14 @@ if status is-interactive
         case Darwin
             set -gx HOSTNAME "macppuccin"
 
+            alias l="ls -al"
+
+            alias gs="git status"
+            alias ga="git add"
+            alias gcm="git commit -m"
+            alias gpl="git pull origin main"
+            alias gps="git push origin main"
+
             alias bup="brew update && brew upgrade && brew autoremove && brew cleanup"
             alias b="brew"
             alias bcleanup="brew autoremove && brew cleanup"
