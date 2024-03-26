@@ -59,7 +59,7 @@ cmd + shift - h            : yabai -m window --space prev && yabai -m window --f
 
 # Applications
 
-alt - b                    : open -a "Arc"
+alt - b                    : open -a "Brave Browser"
 alt - o                    : open -a "Obsidian"
 alt - s                    : open -a "Apple Music"
 alt - z                    : open -a "Microsoft Teams"
