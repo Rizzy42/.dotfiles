@@ -26,5 +26,8 @@ if status is-interactive
     # pfetch config
     echo \n
     pfetch
+
+    # zoxide
+    zoxide init fish | source
 end
 set fish_greeting ""
